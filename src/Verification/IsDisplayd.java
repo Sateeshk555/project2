@@ -36,8 +36,11 @@ public class IsDisplayd {
 			driver.navigate().refresh();
 			WebElement chbx = driver.findElement(By.id("keepLoggedInCheckBoxContainer"));
 			if(chbx.isSelected()) {
-				System.out.println("its not selected");
+				System.out.println("is selected");
 				
+			}
+			else {
+				System.out.println("its not selected");
 			}
 			
 			

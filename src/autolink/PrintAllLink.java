@@ -29,7 +29,7 @@ public class PrintAllLink {
 			 String text = link.getText();
 			 System.err.println(text);
 		 }
-		 driver.close();
+		driver.close();
 		 
 		
 		

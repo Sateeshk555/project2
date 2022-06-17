@@ -33,7 +33,7 @@ public class AutoSuggestion {
 			
 		}
 		
-		driver.close();
+		//driver.close();
 		
 
 	}

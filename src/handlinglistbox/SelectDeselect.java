@@ -26,8 +26,7 @@ public class SelectDeselect {
    Thread.sleep(5000);
    s.selectByValue("d");
    Thread.sleep(5000);
-   s.selectByVisibleText("vada");
-   
+   s.selectByVisibleText("vada");   
    if(s.isMultiple()==true) {
 	   Thread.sleep(5000);
 	   s.deselectByVisibleText("vada");

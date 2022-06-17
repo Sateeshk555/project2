@@ -21,7 +21,7 @@ public class getattribute {
 		WebElement ele = driver.findElement(By.xpath("//input[@placeholder='Password']"));
 		String att = ele.getAttribute("name");
 		System.out.println("attribute value is ===="  +att);
-		if(att.equals("inputtext _r1 inputtext _9npi inputtext _9npi")) {
+		if(att.equals("pass")) {
 			System.out.println("attribute is same as in html , test case pass");
 		}
 		else {

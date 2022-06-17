@@ -19,24 +19,20 @@ public class getSize {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/login/");
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		int ele1 = driver.findElement(By.xpath("//input[@aria-label='Email address or phone number']")).getSize().getHeight();
-		System.out.println(ele1);
-		//ele1.sendKeys("abcdefgh");
-		//Dimension size1 = ele1.getSize();
-		//int UserHei = size1.getHeight();
-		//int UserWid = size1.getWidth();
-		//System.out.println("username text box height is==== " +UserHei);
-		//System.out.println("username text box width is ===" +UserWid);
-	int ele2 = driver.findElement(By.xpath("//input[@placeholder='Password']")).getSize().getHeight();
-	System.out.println(ele2);
-//		ele2.sendKeys("qrffhh");
-//		Dimension size2 = ele2.getSize();
-//	    int PassHei = size2.getHeight();
-//	    int Passwid = size2.getWidth();
-//	    System.out.println("password text box height is ==="  +PassHei);
-//	    System.out.println("password text box width is ==="  +Passwid);
-	    //driver.close();
-		
+		WebElement ele1 = driver.findElement(By.xpath("//input[@aria-label='Email address or phone number']"));
+		Dimension size1 = ele1.getSize();
+		int UserHei = size1.getHeight();
+		int UserWid = size1.getWidth();
+		System.out.println("username text box height is==== " +UserHei);
+		System.out.println("username text box width is ===" +UserWid);
+		WebElement ele2 = driver.findElement(By.xpath("//input[@placeholder='Password']"));		
+		Dimension size2 = ele2.getSize();
+		int PassHei = size2.getHeight();
+		int Passwid = size2.getWidth();
+		System.out.println("password text box height is ==="  +PassHei);
+		System.out.println("password text box width is ==="  +Passwid);
+		driver.close();
+
 		
 
 	}

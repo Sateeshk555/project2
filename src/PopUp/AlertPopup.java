@@ -29,7 +29,7 @@ public class AlertPopup {
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert aler = driver.switchTo().alert();
 		aler.accept();
-		driver.close();
+		//driver.close();
 
 		
 		

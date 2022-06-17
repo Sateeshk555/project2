@@ -20,7 +20,7 @@ static {
 		WebElement ele = driver.findElement(By.xpath("//h2[@class='_8eso']"));
 		String txt1 = ele.getText();
 	    System.out.println(txt1);
-	  //  String txt2 = "Facebook helps you t and share with the people in your life.";
+	  
 	    if(txt1.equals("Facebook helps you connect and share with the people in your life.")){
 	    	
 	    	System.out.println("verified====text is correct");
